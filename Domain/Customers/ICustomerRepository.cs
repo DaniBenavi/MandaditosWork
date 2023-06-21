@@ -4,5 +4,5 @@ public interface ICustomerRepository
 {
     Task<Customer?> GetByIdAsync(CustomerId id);
     Task<bool> Update(Customer customer);
-    Task Add(Customer customer);
+    Task<Customer> Add(Customer customer);
 }
